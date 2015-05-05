@@ -32,3 +32,7 @@ lines(HW2$fitted[,1], lty=2, col="red")
 lines(HW2.pred[,1], col="blue")
 lines(HW2.pred[,2], col="seagreen", lty=2)
 lines(HW2.pred[,3], col="seagreen", lty=2)
+
+
+##Replot with built in Holt-Winters filtering
+plot(HW2, HW2.pred, xlab="Year")
